@@ -1,5 +1,5 @@
 const prod ={
-    url: {
+    url:{
         API_URL:
         'https://bracketserver.onrender.com/api'
     }
@@ -12,5 +12,5 @@ const  dev ={
     }
 }
 
-export const config = process.env.NODE_ENV === 'development' ? dev : prod;
+export const config = process.env.NODE_ENV === 'development' ? dev : prod
 // Exports the dev constants if node environments in dev, otherwise it's prod
