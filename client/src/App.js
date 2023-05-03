@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { config } from './constants'
 
-var url = config.url.API_URL
-
 function App() {
-
+  var url = config.url.API_URL
   const [backendData, setBackendData] = useState([{}])
 
   useEffect(() => {
