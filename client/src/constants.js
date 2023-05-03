@@ -8,7 +8,7 @@ const prod ={
 const  dev ={
     url:{
         API_URL:
-        "/api"
+        "./api"
     }
 }
 
