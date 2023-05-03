@@ -24,6 +24,7 @@ function App() {
           <p key={i}>{user}</p>
         ))
       )}
+      <p> {process.env.NODE_ENV}</p>
     </div>
   )
 }
