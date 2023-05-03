@@ -3,7 +3,7 @@ import { config } from './constants'
 
 function App() {
   var url = config.url.API_URL
-  const [backendData, setBackendData] = useState([])
+  const [backendData, setBackendData] = useState([{}])
 
   useEffect(() => {
     fetch(url).then(response => response.json()
