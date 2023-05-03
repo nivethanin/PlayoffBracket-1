@@ -14,6 +14,17 @@ function App() {
     )
   }, [])
 
+  apicall(()=>{
+    fetch(url).then(response => response.json()
+    ).then(
+      data => {
+        setBackendData(data)
+      }
+    )
+  }, []
+  )
+
+
   return (
     <div>
 
@@ -24,7 +35,9 @@ function App() {
           <p key={i}>{user}</p>
         ))
       )}
-      <p> {process.env.NODE_ENV}</p>
+      <p> {process.env.NODE_ENV}, {url}</p>
+
+      <button onClick={apicall()}>apicall</button>
     </div>
   )
 }
