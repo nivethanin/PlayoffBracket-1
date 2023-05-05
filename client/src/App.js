@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 
 function App() {
   // var url = config.url.API_URL
-  var url = "./api"
+  var url = "http://localhost:5000/api"
   const [backendData, setBackendData] = useState([{}])
 
 
@@ -23,7 +23,8 @@ function App() {
     <div>
 
       {(typeof backendData.users === 'undefined') ? (
-        <p>Loading...</p>
+        <p>Loading... {console.log(backendData.users)}</p>
+        
       ) : (
         backendData.users.map((user, i) => (
           <p key={i}>{user}</p>
