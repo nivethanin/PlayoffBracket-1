@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-// import { config } from './constants.js'
+import { config } from './constants.js'
 
 
 function App() {
-  // var url = config.url.API_URL
-  var url = "http://localhost:5000/api"
+  var url = config.url.API_URL
+  // var url = "http://localhost:5000/api"
   const [backendData, setBackendData] = useState([{}])
 
 
