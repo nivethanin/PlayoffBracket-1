@@ -4,9 +4,8 @@ import { config } from './constants.js'
 
 function App() {
   var url = config.url.API_URL
-  // var url = "http://localhost:5000/api"
-  const [backendData, setBackendData] = useState([{}])
 
+  const [backendData, setBackendData] = useState([{}])
 
   useEffect(() => {
     fetch(url).then(
