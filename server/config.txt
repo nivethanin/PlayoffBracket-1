@@ -1,0 +1,14 @@
+prod:
+    db:
+        API_URL:
+        'https://bracketserver.onrender.com/api'
+    
+
+dev:
+    db:
+        PGHOST:"dpg-ch4abf9n852hpi1plja0-a.ohio-postgres.render.com",
+        PGUSER:"root",
+        PGDATABASE:"playoffpooldb",
+        PGPASSWORD:"64XkvTEDsohLxfA3yWHfzolQiMwa5NhGull",
+        PGPORT:5432
+    
